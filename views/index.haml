@@ -19,11 +19,7 @@
       %h1&== Welcome #{facebook_user.name}!
       %h1&== UID #{facebook_user.uid}!
       %script{:type => "text/javascript"}
-      %a{:href => "#", :onclick => "me.publish_to(my_friend,  :message => 'how are you?', :action_links => [
-    :text => 'my website',
-    :href => 'http://tenderlovemaking.com/'
-  ])
-"} Publish
+      %a{:href => "#", :onclick => "me.publish_to(my_friend,  :message => 'how are you?', :action_links => [:text => 'my website',:href => 'http://tenderlovemaking.com/'])"} Log out
 
       %a{:href => "#", :onclick => "FB.Connect.logoutAndRedirect('/')"} Log out
       
