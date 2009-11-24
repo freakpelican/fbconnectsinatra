@@ -17,6 +17,8 @@
 
     - if logged_in?
       %h1&== Welcome #{facebook_user.name}!
+      %h1&== Welcome #{facebook_user.uid}!
+
       %a{:href => "#", :onclick => "FB.Connect.logoutAndRedirect('/')"} Log out
       
     - else
