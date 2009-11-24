@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-
 require 'facebooker'
 
 raise "No api_keys.yml was found" unless File.exist?(api_keys_file = "api_keys.yml")
