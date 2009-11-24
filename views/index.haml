@@ -18,7 +18,6 @@
     - if logged_in?
       %h1&== Welcome #{facebook_user.name}!
       %h1&== UID #{facebook_user.uid}!
-      %script{:type => "text/javascript"}
       %a{:href => "#", :onclick => "FB.Connect.showPermissionDialog("publish_stream",permissionHandler,true);"} Allow
 
       %a{:href => "#", :onclick => "FB.Connect.logoutAndRedirect('/')"} Log out
