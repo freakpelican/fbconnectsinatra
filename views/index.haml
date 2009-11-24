@@ -21,7 +21,7 @@
 
       %a{:href => "#", :onclick => "FB.Connect.logoutAndRedirect('/')"} Log out
       %a{:href => "#", :onclick => "FB.Connect.showPermissionDialog('publish_stream','permissionHandler','true');"} Allow
-      %a{:href => "#", :onclick => "FB.Connect.streamPublish('', attachment, null, 4);"} Allow
+      %a{:href => "#", :onclick => "FB.Connect.streamPublish();"} Allow
 
       
     - else
