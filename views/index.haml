@@ -20,6 +20,8 @@
       %h1&== UID #{facebook_user.uid}!
 
       %a{:href => "#", :onclick => "FB.Connect.logoutAndRedirect('/')"} Log out
+      %a{:href => "#", :onclick => "FB.Connect.showPermissionDialog();"} Allow
+
       
     - else
       %h1 Log in
