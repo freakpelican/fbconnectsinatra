@@ -22,7 +22,7 @@
       %a{:href => "#", :onclick => "FB.Connect.logoutAndRedirect('/')"} Log out
       %a{:href => "#", :onclick => "FB.Connect.showPermissionDialog('publish_stream','permissionHandler','true');"} Allow
       :plain
-      %a{:href => "#", :onclick => "FB.Connect.streamPublish('',{'name':'weebe.es/<%= @short_url%>','href':'<%= @short_url%>','description':'Just shortened & shared using weebe.es','media':[{'type':'image','src':'http://images.websnapr.com/?size=S&key=76l78ieSa5UB&url=<%= @item.original%>','href':'http://weebe.es/<%= @short_url%>'}]},[{'text':'Shared 122 times with weebe.es','href':'http://weebees.heroku.com'}],null,"Just Shared a link with weebe.es",null,false,"327364725313");"} Publish
+      %a{:href => "#", :onclick => "FB.Connect.streamPublish('',{'name':'weebe.es/','href':'','description':'Just shortened & shared using weebe.es','media':[{'type':'image','src':'http://images.websnapr.com/?size=S&key=76l78ieSa5UB&url=','href':'http://weebe.es/'}]},[{'text':'Shared 122 times with weebe.es','href':'http://weebees.heroku.com'}],null,"Just Shared a link with weebe.es",null,false,"327364725313");"} Publish
       %a{:href => "#", :onclick => "FB.Connect.logoutAndRedirect('/')"} Post
 
 
